@@ -174,3 +174,8 @@ ul,ol{list-style:none}
 .w4-v{font-size:16px;white-space:nowrap}
 @media (max-width:1100px){.w4-v{white-space:normal}}
 @media (max-width:560px){.hero::before{display:none}}
+.hd-nav{gap:24px}
+.btn-nav2{background:transparent;color:var(--navy)!important;border-color:var(--navy)}
+.btn-nav2:hover{background:var(--navy);color:#fff!important;border-color:var(--navy)}
+.hd-nav .btn-sm + .btn-sm{margin-left:-14px}
+@media (max-width:560px){.hd-nav{gap:8px}.hd-nav .btn-sm + .btn-sm{margin-left:0}.btn-sm{padding:6px 12px}}
