@@ -252,3 +252,14 @@ ul,ol{list-style:none}
 /* v8 見出しの下に短いオレンジ線（白セクションでも区切りが分かるように） */
 .sec-ttl::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--orange);margin-top:18px}
 #contact .sec-ttl::after{margin-left:auto;margin-right:auto}
+/* v9 サービス3つを色付きの枠に（資料と同じ3色） */
+.svc{--c:var(--orange);--tint:#FDF3EC;border:1px solid var(--line);border-top:6px solid var(--c);border-radius:12px;padding:40px 44px;margin-top:28px;background:#fff;box-shadow:0 2px 14px rgba(30,53,96,.05)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc-b{--c:#2563A8;--tint:#EEF4FB}
+.svc-g{--c:#1F7A5C;--tint:#EDF6F2}
+.svc-hd{background:var(--tint);margin:-40px -44px 24px;padding:24px 44px;border-radius:6px 6px 0 0}
+.svc-no{color:var(--c);opacity:1}
+.svc-tag{color:var(--c)}
+.svc .btn-ghost-navy{border-color:var(--c);color:var(--c)}
+.svc .btn-ghost-navy:hover{background:var(--c);color:#fff}
+@media (max-width:560px){.svc{padding:28px 20px}.svc-hd{margin:-28px -20px 20px;padding:20px}.svc-no{font-size:34px}.svc h3{font-size:22px}}
