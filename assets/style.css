@@ -263,3 +263,5 @@ ul,ol{list-style:none}
 .svc .btn-ghost-navy{border-color:var(--c);color:var(--c)}
 .svc .btn-ghost-navy:hover{background:var(--c);color:#fff}
 @media (max-width:560px){.svc{padding:28px 20px}.svc-hd{margin:-28px -20px 20px;padding:20px}.svc-no{font-size:34px}.svc h3{font-size:22px}}
+/* v10 iPhone(Safari)で文節の途中で折れないように */
+.nw{display:inline-block}
