@@ -155,3 +155,22 @@ ul,ol{list-style:none}
 }
 .card-sub{font-size:13px!important;color:var(--orange)!important;font-weight:700;margin:-8px 0 12px!important}
 .svc-cta{margin-top:24px}
+
+/* v2: hero JP & 5W1H */
+.hero-jp{font-size:clamp(30px,4.6vw,54px);line-height:1.4;font-weight:700;position:relative;z-index:1;word-break:auto-phrase}
+.hero-body{max-width:640px;margin-top:24px;color:rgba(255,255,255,.88);font-size:16px;line-height:1.95;position:relative;z-index:1}
+.hero-tag{font-family:var(--en);font-weight:800;font-size:clamp(17px,1.8vw,21px);margin-top:28px;letter-spacing:.01em;position:relative;z-index:1}
+.hero-tag .on{color:var(--orange)}
+.w4{background:var(--beige);padding:0 0 8px}
+.w4-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;transform:translateY(-48px);margin-bottom:-48px}
+.w4-grid li{background:#fff;border-radius:12px;padding:24px 22px;box-shadow:0 1px 0 var(--line);border:1px solid var(--line)}
+.w4-k{font-family:var(--en);font-weight:800;font-size:13px;letter-spacing:.12em;color:var(--orange);margin-bottom:10px}
+.w4-k span{font-family:var(--sans);font-weight:500;letter-spacing:0;color:var(--sub);margin-left:8px;font-size:12px}
+.w4-v{font-weight:700;font-size:18px;color:var(--navy);line-height:1.5;margin-bottom:8px;word-break:auto-phrase}
+.w4-s{font-size:13px;color:var(--sub);line-height:1.7}
+@media (max-width:880px){.w4-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.w4-grid{gap:10px}.w4-grid li{padding:18px 14px}.w4-v{font-size:15px}}
+.w4{background:#fff}
+.w4-v{font-size:16px;white-space:nowrap}
+@media (max-width:1100px){.w4-v{white-space:normal}}
+@media (max-width:560px){.hero::before{display:none}}
