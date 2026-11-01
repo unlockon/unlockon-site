@@ -231,3 +231,14 @@ ul,ol{list-style:none}
 @media (max-width:560px){.career2{grid-template-columns:1fr}.career2 dt{border-top:1px solid var(--line);padding-bottom:0}.career2 dd{border-top:0;padding-top:2px}.career2 dt:first-of-type{border-top:0}}
 #message .sec-num,#message .sec-ttl,.msg-v2,.prof2{max-width:880px;margin-left:auto;margin-right:auto}
 .msg-v2 p{font-size:16.5px}
+/* v5 見出しを大きく */
+.sec-num{font-size:16px;letter-spacing:.14em;margin-bottom:12px}
+.sec-ttl{font-size:clamp(26px,3.8vw,42px);margin-bottom:36px}
+.stmt .sec-ttl{margin-bottom:24px}
+.stmt-row dt{font-size:15px}
+.stmt-row dt b{font-size:16px}
+@media (max-width:560px){.sec-num{font-size:14px}.sec-ttl{font-size:24px}}
+.sec-num{font-size:17px}
+.card h3{font-size:20px}
+.card li{font-size:15px}
+@media (max-width:560px){.sec-num{font-size:14px}.card h3{font-size:18px}}
