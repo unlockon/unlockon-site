@@ -242,3 +242,7 @@ ul,ol{list-style:none}
 .card h3{font-size:20px}
 .card li{font-size:15px}
 @media (max-width:560px){.sec-num{font-size:14px}.card h3{font-size:18px}}
+/* v6 セクション境目：白とベージュの交互 */
+#issues .card{background:#fff;border-color:transparent;box-shadow:0 2px 12px rgba(30,53,96,.06)}
+.stmt{padding-bottom:88px}
+@media (max-width:880px){.stmt{padding-bottom:64px}}
