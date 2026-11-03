@@ -332,3 +332,17 @@
 .mo2 .mo-list span{font-size:13px;display:block;margin-top:4px}
 @media (max-width:880px){.mo2 .mo-list{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.mo2 .mo-list{grid-template-columns:1fr}.win-shot{margin-bottom:28px}}
+
+/* デスクトップモニターに入れる（FV） */
+.mon{position:relative}
+.mon-body{background:linear-gradient(180deg,#F3F4F6,#DADDE2);border-radius:18px;padding:12px 12px 34px;box-shadow:0 30px 70px rgba(5,15,35,.5)}
+.mon-scr{background:#0B1222;border-radius:8px;padding:6px;overflow:hidden}
+.mon-scr .win{border-radius:4px;box-shadow:none}
+.mon-neck{width:18%;height:56px;margin:0 auto;background:linear-gradient(90deg,#BFC3CA,#E4E6EA 50%,#BFC3CA);clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.mon-base{width:38%;height:10px;margin:0 auto;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#E6E8EC,#B9BDC4);box-shadow:0 10px 20px rgba(5,15,35,.45)}
+.mon .win-bar{padding:7px 12px}
+.mon .win-side{background:#F4F6F9;border-right:1px solid var(--line)}
+.mon .win-side p{color:var(--navy)}
+.mon .win-side li{color:var(--sub)}
+.mon .win-side li.on{background:#fff;color:var(--navy);border-left-color:var(--orange)}
+@media (max-width:560px){.mon-body{padding:8px 8px 22px;border-radius:12px}.mon-scr{padding:4px}.mon-neck{height:36px}}
