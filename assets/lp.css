@@ -286,3 +286,39 @@
   .d2-big b{font-size:34px}
   .d2-next{flex-direction:column;align-items:flex-start;gap:6px}
 }
+
+/* 案A3：ブラウザの窓で囲む */
+.win{background:#fff;border-radius:12px;box-shadow:0 30px 70px rgba(5,15,35,.45);overflow:hidden}
+.win-bar{display:flex;align-items:center;gap:14px;background:#EEF1F5;padding:10px 14px;border-bottom:1px solid #DDE2E9}
+.win-dots{display:flex;gap:6px;flex:none}
+.win-dots i{width:10px;height:10px;border-radius:50%;background:#C9CFD8}
+.win-url{flex:1;background:#fff;border-radius:6px;font-size:11.5px;color:var(--sub);padding:4px 12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.win-body{display:grid;grid-template-columns:116px 1fr}
+.win-side{background:var(--navy);padding:16px 0}
+.win-side p{font-family:var(--en);font-weight:800;color:#fff;font-size:12px;letter-spacing:.04em;padding:0 14px 14px}
+.win-side p span{color:var(--orange)}
+.win-side li{font-size:11.5px;color:rgba(255,255,255,.65);padding:7px 14px}
+.win-side li.on{background:rgba(255,255,255,.1);color:#fff;font-weight:700;border-left:3px solid var(--orange);padding-left:11px}
+.win .d2{box-shadow:none;border-radius:0}
+@media (max-width:560px){.win-body{grid-template-columns:1fr}.win-side{display:none}}
+.win .d2-hd{padding:12px 18px}
+.win .d2-body{padding:16px 18px 18px}
+.win .d2-kpi div{padding:8px 10px}
+.win .d2-kpi b{font-size:16px}
+.win .d2-kpi i{font-size:10.5px}
+.win .d2-next p{font-size:12.5px}
+.win .d2-next span{font-size:10.5px}
+.lp-hero .wrap{max-width:1200px;grid-template-columns:1fr 1.1fr;gap:40px}
+.win-body{grid-template-columns:100px 1fr}
+.win-side p{font-size:11px}
+.win .d2-kpi i{white-space:nowrap;display:block}
+.win .d2-next{flex-direction:column;align-items:flex-start;gap:6px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+.lp-hero .wrap{max-width:1080px;grid-template-columns:.9fr 1.1fr;gap:36px}
+.win-body{grid-template-columns:108px 1fr}
+.win-side p,.win-side li{white-space:nowrap}
+.win-side li{font-size:11px;padding:7px 12px}
+.win-side li.on{padding-left:9px}
+.win-side p{padding:0 12px 14px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+@media (max-width:560px){.win-body{grid-template-columns:1fr}}
