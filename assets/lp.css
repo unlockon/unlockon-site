@@ -197,3 +197,58 @@
 }
 @media (max-width:560px){.allin-row > p br{display:none}.cmp .pc-only{display:none}}
 @media (min-width:561px){.cmp .sp-only{display:none}}
+
+/* v2 FV：HTMLで描くダッシュボード（案A） */
+.mock{position:relative;padding:8px 0 40px 24px}
+.mock-main{background:#fff;color:var(--ink);border-radius:16px;box-shadow:0 30px 70px rgba(5,15,35,.45);padding:22px 24px 20px;position:relative;z-index:1}
+.mock-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.mock-hd p{font-weight:700;color:var(--navy);font-size:15px}
+.mock-hd p small{display:block;font-weight:500;color:var(--sub);font-size:11.5px;letter-spacing:.04em}
+.mock-badge{font-size:12px;font-weight:700;color:var(--orange);background:#FDF0E6;border-radius:999px;padding:4px 12px;white-space:nowrap}
+.mock-land{background:var(--navy);color:#fff;border-radius:10px;padding:12px 16px;margin-bottom:12px;font-size:13px;line-height:1.6}
+.mock-land b{font-family:var(--en);font-size:20px;color:var(--orange);margin:0 2px}
+.mock-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.mock-kpi div{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.mock-kpi span{display:block;font-size:11px;color:var(--sub)}
+.mock-kpi b{display:block;font-family:var(--en);font-weight:700;font-size:17px;color:var(--navy);line-height:1.3}
+.mock-kpi i{font-style:normal;font-size:11px;font-weight:700}
+.mock-kpi .dn{color:#C0392B}.mock-kpi .ok{color:#1F7A5C}
+.mock-chart{display:flex;align-items:flex-end;gap:10px;height:84px;padding:0 4px;border-bottom:1px solid var(--line);position:relative}
+.mock-chart::before{content:"予算";position:absolute;right:0;top:14px;font-size:10px;color:var(--sub)}
+.mock-chart::after{content:"";position:absolute;left:0;right:28px;top:22px;border-top:2px dashed #C9CED6}
+.mock-chart span{flex:1;background:#C9D6EA;border-radius:4px 4px 0 0}
+.mock-chart span:last-child{background:var(--navy)}
+.mock-mo{display:flex;gap:10px;padding:4px 4px 0;font-size:10.5px;color:var(--sub)}
+.mock-mo span{flex:1;text-align:center}
+.mock-memo{position:absolute;left:-8px;bottom:0;z-index:2;width:72%;background:#fff;border-radius:12px;border-left:5px solid var(--orange);box-shadow:0 18px 40px rgba(5,15,35,.35);padding:14px 16px;color:var(--ink)}
+.mock-memo p{font-size:11.5px;color:var(--orange);font-weight:700;margin-bottom:4px}
+.mock-memo b{display:block;font-size:13.5px;color:var(--navy);line-height:1.6}
+.mock-tag{position:absolute;right:-6px;top:-14px;z-index:3;background:var(--orange);color:#fff;border-radius:12px;padding:10px 14px;text-align:center;box-shadow:0 12px 28px rgba(232,121,47,.45);line-height:1.3}
+.mock-tag small{display:block;font-size:11px}
+.mock-tag b{font-family:var(--en);font-size:26px}
+.mock-tag b span{font-family:var(--sans);font-size:13px}
+@media (max-width:560px){
+  .mock{padding:8px 0 64px 0}
+  .mock-main{padding:16px 14px}
+  .mock-kpi{grid-template-columns:1fr 1fr}
+  .mock-memo{left:8px;width:86%}
+  .mock-tag{right:-4px}
+  .mock-land{font-size:12px}
+}
+
+/* 案B：文字主役のFV（画像なし） */
+.lp-hero.hb .wrap{grid-template-columns:1fr;text-align:center}
+.hb .lp-h1{font-size:clamp(40px,6.4vw,76px)}
+.hb .lp-cta{align-items:center}
+.hb-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1px solid rgba(255,255,255,.18)}
+.hb-facts li{padding:24px 12px 0;border-left:1px solid rgba(255,255,255,.18)}
+.hb-facts li:first-child{border-left:0}
+.hb-facts b{display:block;font-family:var(--en);font-weight:800;font-size:40px;color:var(--orange);line-height:1.1}
+.hb-facts b small{font-family:var(--sans);font-size:16px;color:#fff;margin-left:4px}
+.hb-facts span{font-size:14px;color:rgba(255,255,255,.8)}
+@media (max-width:560px){.hb-facts{grid-template-columns:1fr}.hb-facts li{border-left:0;border-bottom:1px solid rgba(255,255,255,.18);padding:16px 0}.hb-facts b{font-size:32px}}
+.mock{padding-bottom:72px}
+.mock-hd{justify-content:flex-start;gap:12px;align-items:flex-end;padding-right:120px}
+.mock-tag{right:-18px;top:-22px}
+.mock-unit{font-size:10.5px;color:var(--sub);text-align:right;margin:-6px 0 4px}
+@media (max-width:560px){.mock-chart,.mock-mo{display:none}.mock{padding-bottom:84px}.mock-hd{padding-right:96px}.mock-tag{right:-6px}}
