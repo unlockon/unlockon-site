@@ -358,3 +358,9 @@
 .phone-scr img{border-radius:28px;width:100%;display:block}
 .phone figcaption{margin-top:12px;font-size:14px;font-weight:700;color:var(--navy)}
 @media (max-width:560px){.phones-row{gap:14px}.phone{width:48%}.phone-scr{border-radius:24px;padding:6px}.phone-scr img{border-radius:19px}.phone-scr::before{top:11px;width:40px;height:10px}.phone figcaption{font-size:12px}}
+/* 数字の字体をダッシュボード本体・見出しと同じ明朝系に */
+.d2-big b,.d2-kpi b{font-family:var(--serif);font-weight:700;letter-spacing:0;font-feature-settings:"tnum"}
+.d2-big b{font-size:42px}
+.d2-kpi b{font-size:18px}
+.win .d2-kpi b{font-size:17px}
+.days b{font-family:var(--serif)}
