@@ -365,3 +365,23 @@
 .win .d2-kpi b{font-size:17px}
 .days b{font-family:var(--serif)}
 .d2-big b,.d2-kpi b{font-weight:500;color:#1E2A3B}
+/* 横長のモニターに：中身を左右2列 */
+.lp-hero .wrap{max-width:1200px;grid-template-columns:.8fr 1.2fr;gap:40px}
+.mon .d2-body{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;align-items:start}
+.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr;margin-bottom:0}
+.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}
+.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}
+.mon .d2-l .d2-scale{margin-bottom:14px}
+.mon .d2-big b{font-size:38px}
+.mon .win-side li{padding:6px 12px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}.mon .d2-body{grid-template-columns:1fr}.mon .d2-r .d2-kpi{grid-template-columns:repeat(4,1fr)}.mon .d2-r .d2-kpi div:nth-child(3){border-left:1px solid var(--line)}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:0}}
+@media (max-width:560px){.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr}.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}}
+.d2-big small,.d2-big em{white-space:nowrap}
+.mon .d2-big em{font-size:12.5px}
+.lp .hd .wrap{max-width:1200px}
+/* 11/4 PC枠をやめ、ブラウザ画面だけ */
+.mon-body{background:none;padding:0;border-radius:12px;box-shadow:0 28px 60px rgba(5,15,35,.5)}
+.mon-scr{background:none;padding:0;border-radius:12px}
+.mon-scr .win{border-radius:12px;box-shadow:0 0 0 6px rgba(255,255,255,.12)}
+.mon-neck,.mon-base{display:none}
+@media (max-width:560px){.mon-body{padding:0}.mon-scr{padding:0}}
