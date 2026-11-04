@@ -443,6 +443,8 @@ u.ai,.ai{text-decoration:none!important}
 .v1 .was b{margin:0 3px!important}
 @media (max-width:600px){.v1 .ai1,.v1 .was,.v1 .was b,.v1 .nl2{font-size:16px!important}}
 .db-n .dq,.db-n .dq b{font-weight:inherit;color:inherit}.db-n .dq b{display:inline-block;white-space:nowrap}
+@media (max-width:600px){.v1 .cap2{font-size:15.5px!important;white-space:nowrap;line-height:1.4!important;margin-bottom:14px!important;padding-left:12px!important;border-left-width:4px!important}}
+.v1 .cap2 small{font-size:inherit}@media (max-width:600px){.v1 .cap2 small{font-size:12px}}
 /* sticky header */
 .hdr{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(30,53,96,.08);color:var(--navy)}
 .hdr .top{max-width:1180px;margin:0 auto;padding:0 40px;width:100%}
