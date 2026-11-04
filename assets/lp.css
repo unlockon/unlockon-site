@@ -197,3 +197,254 @@
 }
 @media (max-width:560px){.allin-row > p br{display:none}.cmp .pc-only{display:none}}
 @media (min-width:561px){.cmp .sp-only{display:none}}
+
+/* v2 FV：HTMLで描くダッシュボード（案A） */
+.mock{position:relative;padding:8px 0 40px 24px}
+.mock-main{background:#fff;color:var(--ink);border-radius:16px;box-shadow:0 30px 70px rgba(5,15,35,.45);padding:22px 24px 20px;position:relative;z-index:1}
+.mock-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.mock-hd p{font-weight:700;color:var(--navy);font-size:15px}
+.mock-hd p small{display:block;font-weight:500;color:var(--sub);font-size:11.5px;letter-spacing:.04em}
+.mock-badge{font-size:12px;font-weight:700;color:var(--orange);background:#FDF0E6;border-radius:999px;padding:4px 12px;white-space:nowrap}
+.mock-land{background:var(--navy);color:#fff;border-radius:10px;padding:12px 16px;margin-bottom:12px;font-size:13px;line-height:1.6}
+.mock-land b{font-family:var(--en);font-size:20px;color:var(--orange);margin:0 2px}
+.mock-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.mock-kpi div{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.mock-kpi span{display:block;font-size:11px;color:var(--sub)}
+.mock-kpi b{display:block;font-family:var(--en);font-weight:700;font-size:17px;color:var(--navy);line-height:1.3}
+.mock-kpi i{font-style:normal;font-size:11px;font-weight:700}
+.mock-kpi .dn{color:#C0392B}.mock-kpi .ok{color:#1F7A5C}
+.mock-chart{display:flex;align-items:flex-end;gap:10px;height:84px;padding:0 4px;border-bottom:1px solid var(--line);position:relative}
+.mock-chart::before{content:"予算";position:absolute;right:0;top:14px;font-size:10px;color:var(--sub)}
+.mock-chart::after{content:"";position:absolute;left:0;right:28px;top:22px;border-top:2px dashed #C9CED6}
+.mock-chart span{flex:1;background:#C9D6EA;border-radius:4px 4px 0 0}
+.mock-chart span:last-child{background:var(--navy)}
+.mock-mo{display:flex;gap:10px;padding:4px 4px 0;font-size:10.5px;color:var(--sub)}
+.mock-mo span{flex:1;text-align:center}
+.mock-memo{position:absolute;left:-8px;bottom:0;z-index:2;width:72%;background:#fff;border-radius:12px;border-left:5px solid var(--orange);box-shadow:0 18px 40px rgba(5,15,35,.35);padding:14px 16px;color:var(--ink)}
+.mock-memo p{font-size:11.5px;color:var(--orange);font-weight:700;margin-bottom:4px}
+.mock-memo b{display:block;font-size:13.5px;color:var(--navy);line-height:1.6}
+.mock-tag{position:absolute;right:-6px;top:-14px;z-index:3;background:var(--orange);color:#fff;border-radius:12px;padding:10px 14px;text-align:center;box-shadow:0 12px 28px rgba(232,121,47,.45);line-height:1.3}
+.mock-tag small{display:block;font-size:11px}
+.mock-tag b{font-family:var(--en);font-size:26px}
+.mock-tag b span{font-family:var(--sans);font-size:13px}
+@media (max-width:560px){
+  .mock{padding:8px 0 64px 0}
+  .mock-main{padding:16px 14px}
+  .mock-kpi{grid-template-columns:1fr 1fr}
+  .mock-memo{left:8px;width:86%}
+  .mock-tag{right:-4px}
+  .mock-land{font-size:12px}
+}
+
+/* 案B：文字主役のFV（画像なし） */
+.lp-hero.hb .wrap{grid-template-columns:1fr;text-align:center}
+.hb .lp-h1{font-size:clamp(40px,6.4vw,76px)}
+.hb .lp-cta{align-items:center}
+.hb-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1px solid rgba(255,255,255,.18)}
+.hb-facts li{padding:24px 12px 0;border-left:1px solid rgba(255,255,255,.18)}
+.hb-facts li:first-child{border-left:0}
+.hb-facts b{display:block;font-family:var(--en);font-weight:800;font-size:40px;color:var(--orange);line-height:1.1}
+.hb-facts b small{font-family:var(--sans);font-size:16px;color:#fff;margin-left:4px}
+.hb-facts span{font-size:14px;color:rgba(255,255,255,.8)}
+@media (max-width:560px){.hb-facts{grid-template-columns:1fr}.hb-facts li{border-left:0;border-bottom:1px solid rgba(255,255,255,.18);padding:16px 0}.hb-facts b{font-size:32px}}
+.mock{padding-bottom:72px}
+.mock-hd{justify-content:flex-start;gap:12px;align-items:flex-end;padding-right:120px}
+.mock-tag{right:-18px;top:-22px}
+.mock-unit{font-size:10.5px;color:var(--sub);text-align:right;margin:-6px 0 4px}
+@media (max-width:560px){.mock-chart,.mock-mo{display:none}.mock{padding-bottom:84px}.mock-hd{padding-right:96px}.mock-tag{right:-6px}}
+
+/* 案A2：1枚にそろえたダッシュボード（はみ出し要素なし） */
+.d2{background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(5,15,35,.40);color:var(--ink);overflow:hidden}
+.d2-hd{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
+.d2-hd p{font-weight:700;color:var(--navy);font-size:14px}
+.d2-hd span{font-size:12px;color:var(--sub)}
+.d2-hd span b{color:var(--orange)}
+.d2-body{padding:20px 22px 22px}
+.d2-lbl{font-size:12.5px;color:var(--sub);margin-bottom:2px}
+.d2-big{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.d2-big b{font-family:var(--en);font-weight:800;font-size:40px;line-height:1;color:var(--navy)}
+.d2-big small{font-size:13px;color:var(--sub)}
+.d2-big em{font-style:normal;font-size:13px;font-weight:700;color:#C0392B;margin-left:auto}
+.d2-bar{height:8px;border-radius:4px;background:#E7EBF1;position:relative;margin-bottom:6px}
+.d2-bar i{position:absolute;left:0;top:0;bottom:0;width:73.6%;border-radius:4px;background:var(--navy)}
+.d2-bar u{position:absolute;left:100%;top:-4px;bottom:-4px;width:2px;background:var(--orange);text-decoration:none}
+.d2-scale{display:flex;justify-content:space-between;font-size:11px;color:var(--sub);margin-bottom:18px}
+.d2-kpi{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;margin-bottom:16px}
+.d2-kpi div{padding:10px 12px;border-left:1px solid var(--line)}
+.d2-kpi div:first-child{border-left:0}
+.d2-kpi span{display:block;font-size:11px;color:var(--sub)}
+.d2-kpi b{display:block;font-family:var(--en);font-weight:700;font-size:18px;color:var(--navy);line-height:1.35}
+.d2-kpi i{font-style:normal;font-size:11px;font-weight:700;color:#C0392B}
+.d2-kpi i.ok{color:#1F7A5C}
+.d2-next{background:#FDF3EB;border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center}
+.d2-next span{flex:none;font-size:11.5px;font-weight:700;color:#fff;background:var(--orange);border-radius:6px;padding:3px 8px}
+.d2-next p{font-size:13.5px;font-weight:700;color:var(--navy);line-height:1.5}
+@media (max-width:560px){
+  .d2-kpi{grid-template-columns:1fr 1fr}
+  .d2-kpi div:nth-child(3){border-left:0}
+  .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}
+  .d2-big b{font-size:34px}
+  .d2-next{flex-direction:column;align-items:flex-start;gap:6px}
+}
+
+/* 案A3：ブラウザの窓で囲む */
+.win{background:#fff;border-radius:12px;box-shadow:0 30px 70px rgba(5,15,35,.45);overflow:hidden}
+.win-bar{display:flex;align-items:center;gap:14px;background:#EEF1F5;padding:10px 14px;border-bottom:1px solid #DDE2E9}
+.win-dots{display:flex;gap:6px;flex:none}
+.win-dots i{width:10px;height:10px;border-radius:50%;background:#C9CFD8}
+.win-url{flex:1;background:#fff;border-radius:6px;font-size:11.5px;color:var(--sub);padding:4px 12px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.win-body{display:grid;grid-template-columns:116px 1fr}
+.win-side{background:var(--navy);padding:16px 0}
+.win-side p{font-family:var(--en);font-weight:800;color:#fff;font-size:12px;letter-spacing:.04em;padding:0 14px 14px}
+.win-side p span{color:var(--orange)}
+.win-side li{font-size:11.5px;color:rgba(255,255,255,.65);padding:7px 14px}
+.win-side li.on{background:rgba(255,255,255,.1);color:#fff;font-weight:700;border-left:3px solid var(--orange);padding-left:11px}
+.win .d2{box-shadow:none;border-radius:0}
+@media (max-width:560px){.win-body{grid-template-columns:1fr}.win-side{display:none}}
+.win .d2-hd{padding:12px 18px}
+.win .d2-body{padding:16px 18px 18px}
+.win .d2-kpi div{padding:8px 10px}
+.win .d2-kpi b{font-size:16px}
+.win .d2-kpi i{font-size:10.5px}
+.win .d2-next p{font-size:12.5px}
+.win .d2-next span{font-size:10.5px}
+.lp-hero .wrap{max-width:1200px;grid-template-columns:1fr 1.1fr;gap:40px}
+.win-body{grid-template-columns:100px 1fr}
+.win-side p{font-size:11px}
+.win .d2-kpi i{white-space:nowrap;display:block}
+.win .d2-next{flex-direction:column;align-items:flex-start;gap:6px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+.lp-hero .wrap{max-width:1080px;grid-template-columns:.9fr 1.1fr;gap:36px}
+.win-body{grid-template-columns:108px 1fr}
+.win-side p,.win-side li{white-space:nowrap}
+.win-side li{font-size:11px;padding:7px 12px}
+.win-side li.on{padding-left:9px}
+.win-side p{padding:0 12px 14px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+@media (max-width:560px){.win-body{grid-template-columns:1fr}}
+.win-shot{max-width:960px;margin:0 auto 40px;box-shadow:0 20px 50px rgba(30,53,96,.18);border:1px solid var(--line)}
+.win-shot img{width:100%;display:block}
+.mo2{grid-template-columns:1fr}
+.mo2 .mo-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.mo2 .mo-list li,.mo2 .mo-list li:last-child{display:block;border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}
+.mo2 .mo-list i{display:block;margin-bottom:4px}
+.mo2 .mo-list b{font-size:15px}
+.mo2 .mo-list span{font-size:13px;display:block;margin-top:4px}
+@media (max-width:880px){.mo2 .mo-list{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.mo2 .mo-list{grid-template-columns:1fr}.win-shot{margin-bottom:28px}}
+
+/* デスクトップモニターに入れる（FV） */
+.mon{position:relative}
+.mon-body{background:linear-gradient(180deg,#F3F4F6,#DADDE2);border-radius:18px;padding:12px 12px 34px;box-shadow:0 30px 70px rgba(5,15,35,.5)}
+.mon-scr{background:#0B1222;border-radius:8px;padding:6px;overflow:hidden}
+.mon-scr .win{border-radius:4px;box-shadow:none}
+.mon-neck{width:18%;height:56px;margin:0 auto;background:linear-gradient(90deg,#BFC3CA,#E4E6EA 50%,#BFC3CA);clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.mon-base{width:38%;height:10px;margin:0 auto;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#E6E8EC,#B9BDC4);box-shadow:0 10px 20px rgba(5,15,35,.45)}
+.mon .win-bar{padding:7px 12px}
+.mon .win-side{background:#F4F6F9;border-right:1px solid var(--line)}
+.mon .win-side p{color:var(--navy)}
+.mon .win-side li{color:var(--sub)}
+.mon .win-side li.on{background:#fff;color:var(--navy);border-left-color:var(--orange)}
+@media (max-width:560px){.mon-body{padding:8px 8px 22px;border-radius:12px}.mon-scr{padding:4px}.mon-neck{height:36px}}
+@media (max-width:560px){.win-shot{display:none}}
+
+/* スマホ画面 */
+.phones{margin:0 auto 48px;text-align:center}
+.phones-ttl{font-family:var(--serif);font-weight:700;color:var(--navy);font-size:clamp(20px,2.4vw,26px);margin-bottom:24px}
+.phones-row{display:flex;justify-content:center;gap:40px}
+.phone{width:240px;margin:0}
+.phone-scr{background:#111827;border-radius:36px;padding:10px;box-shadow:0 20px 44px rgba(30,53,96,.22);position:relative}
+.phone-scr::before{content:"";position:absolute;top:18px;left:50%;transform:translateX(-50%);width:64px;height:16px;border-radius:10px;background:#111827;z-index:1}
+.phone-scr img{border-radius:28px;width:100%;display:block}
+.phone figcaption{margin-top:12px;font-size:14px;font-weight:700;color:var(--navy)}
+@media (max-width:560px){.phones-row{gap:14px}.phone{width:48%}.phone-scr{border-radius:24px;padding:6px}.phone-scr img{border-radius:19px}.phone-scr::before{top:11px;width:40px;height:10px}.phone figcaption{font-size:12px}}
+/* 数字の字体をダッシュボード本体・見出しと同じ明朝系に */
+.d2-big b,.d2-kpi b{font-family:var(--serif);font-weight:700;letter-spacing:0;font-feature-settings:"tnum"}
+.d2-big b{font-size:42px}
+.d2-kpi b{font-size:18px}
+.win .d2-kpi b{font-size:17px}
+.days b{font-family:var(--serif)}
+.d2-big b,.d2-kpi b{font-weight:500;color:#1E2A3B}
+/* 横長のモニターに：中身を左右2列 */
+.lp-hero .wrap{max-width:1200px;grid-template-columns:.8fr 1.2fr;gap:40px}
+.mon .d2-body{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;align-items:start}
+.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr;margin-bottom:0}
+.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}
+.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}
+.mon .d2-l .d2-scale{margin-bottom:14px}
+.mon .d2-big b{font-size:38px}
+.mon .win-side li{padding:6px 12px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}.mon .d2-body{grid-template-columns:1fr}.mon .d2-r .d2-kpi{grid-template-columns:repeat(4,1fr)}.mon .d2-r .d2-kpi div:nth-child(3){border-left:1px solid var(--line)}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:0}}
+@media (max-width:560px){.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr}.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}}
+.d2-big small,.d2-big em{white-space:nowrap}
+.mon .d2-big em{font-size:12.5px}
+.lp .hd .wrap{max-width:1200px}
+/* 11/4 PC枠をやめ、ブラウザ画面だけ */
+.mon-body{background:none;padding:0;border-radius:12px;box-shadow:0 28px 60px rgba(5,15,35,.5)}
+.mon-scr{background:none;padding:0;border-radius:12px}
+.mon-scr .win{border-radius:12px;box-shadow:0 0 0 6px rgba(255,255,255,.12)}
+.mon-neck,.mon-base{display:none}
+@media (max-width:560px){.mon-body{padding:0}.mon-scr{padding:0}}
+/* 11/4 画面が半分以上を占めないよう縮小 */
+.lp-hero .wrap{grid-template-columns:1.1fr .9fr;gap:48px}
+.mon .win-side{display:none}
+.mon .d2-big b{font-size:32px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+.mon .win-body{grid-template-columns:1fr}
+.mon .d2-next p,.mon .d2-next b,.mon .d2-next strong{white-space:nowrap}
+.mon .d2-next{font-size:14px}
+.mon .d2-body{grid-template-columns:1.35fr 1fr}
+@media (max-width:880px){.mon .d2-body{grid-template-columns:1fr}.mon .d2-next p{white-space:normal}}
+/* 11/4 左右を中央に寄せ、見出しを大きく */
+.lp-hero .wrap{max-width:1120px;grid-template-columns:1fr 1fr;gap:56px}
+.lp-hero .lp-h1{font-size:clamp(34px,5vw,64px)}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}}
+.lp .hd .wrap{max-width:1120px}
+/* 11/4 右の画面を少し大きく（中央寄せは維持） */
+.lp-hero .wrap,.lp .hd .wrap{max-width:1240px}
+.lp-hero .wrap{grid-template-columns:1fr 1.1fr;gap:56px}
+.mon .d2-big b{font-size:38px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}.mon .d2-big b{font-size:34px}}
+/* 11/4 画面を上下に大きく、左は列の中央に */
+.mon .d2-hd{padding:18px 22px}
+.mon .d2-body{padding:26px 22px 28px;align-items:stretch}
+.mon .d2-l .d2-scale{margin-bottom:22px}
+.mon .d2-r .d2-kpi{height:100%;grid-template-rows:1fr 1fr}
+.mon .d2-r .d2-kpi div{padding:14px 14px;display:flex;flex-direction:column;justify-content:center}
+.mon .d2-next{padding:16px 16px}
+.lp-hero .wrap>div:first-child{justify-self:center}
+@media (max-width:880px){.lp-hero .wrap>div:first-child{justify-self:stretch}.mon .d2-r .d2-kpi{height:auto}}
+/* 11/4 左の文字を大きく、中央の隙間を詰める（PC幅のみ） */
+@media (min-width:1100px){
+  .lp-hero .wrap{gap:40px}
+  .lp-hero .wrap>div:first-child{justify-self:end}
+  .lp-hero .lp-h1{font-size:76px}
+  .lp-hero .lp-target{font-size:17px;padding:7px 20px}
+  .lp-hero .lp-name{font-size:17px}.lp-hero .lp-name b{font-size:19px}
+  .lp-hero .lp-sub{font-size:19px}
+  .lp-hero .lp-cta .btn{font-size:19px}
+  .lp-hero .lp-cta small{font-size:14px}
+}
+/* 11/4 左右の外側余白を均等に（中身の幅で中央寄せ） */
+@media (min-width:1100px){
+  .lp-hero .wrap{max-width:none;grid-template-columns:max-content minmax(0,680px);justify-content:center;gap:64px}
+  .lp-hero .wrap>div:first-child{justify-self:start}
+}
+@media (min-width:1100px){.lp-hero .wrap{padding-left:clamp(24px,5vw,80px);padding-right:clamp(24px,5vw,80px)}}
+/* 11/4 左メニューを戻し、上のブラウザバーを外す */
+.mon .win-bar{display:none}
+.mon .win-side{display:block}
+.mon .win-body{grid-template-columns:132px 1fr}
+@media (max-width:560px){.mon .win-side{display:none}.mon .win-body{grid-template-columns:1fr}}
+/* 11/4 メニュー付きでは中身を1列に（着地→4つの数字→次に決めること） */
+.mon .d2-body{display:flex;flex-direction:column;align-items:stretch}
+.mon .d2-l{display:contents}
+.mon .d2-r{order:1;margin-bottom:16px}
+.mon .d2-next{order:2}
+.mon .d2-r .d2-kpi{height:auto;grid-template-columns:repeat(4,1fr);grid-template-rows:auto}
+.mon .d2-r .d2-kpi div{padding:12px 14px}
+.mon .d2-r .d2-kpi div:nth-child(n){border-top:0;border-left:1px solid var(--line)}
+.mon .d2-r .d2-kpi div:first-child{border-left:0}
+.mon .d2-l .d2-scale{margin-bottom:18px}
+@media (max-width:560px){.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr}.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}}
+.mon .d2-body{gap:0}
