@@ -333,6 +333,8 @@
 
 .dep .aiw{margin:14px 0 0;text-align:center;font-size:13px;font-weight:700;color:var(--navy)}.dep .aiw .ai{font-size:11px}
 @media (max-width:600px){.dep .aiw{font-size:12px}}
+#what .body{padding-bottom:0!important}#what{padding-bottom:56px!important}#services{padding-top:56px!important}#services .body{padding-top:0!important}
+@media (max-width:600px){#what{padding-bottom:36px!important}#services{padding-top:36px!important}}
 /* sticky header */
 .hdr{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(30,53,96,.08);color:var(--navy)}
 .hdr .top{max-width:1180px;margin:0 auto;padding:0 40px;width:100%}
