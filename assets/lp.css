@@ -414,3 +414,14 @@
 .mon .d2-next{padding:16px 16px}
 .lp-hero .wrap>div:first-child{justify-self:center}
 @media (max-width:880px){.lp-hero .wrap>div:first-child{justify-self:stretch}.mon .d2-r .d2-kpi{height:auto}}
+/* 11/4 左の文字を大きく、中央の隙間を詰める（PC幅のみ） */
+@media (min-width:1100px){
+  .lp-hero .wrap{gap:40px}
+  .lp-hero .wrap>div:first-child{justify-self:end}
+  .lp-hero .lp-h1{font-size:76px}
+  .lp-hero .lp-target{font-size:17px;padding:7px 20px}
+  .lp-hero .lp-name{font-size:17px}.lp-hero .lp-name b{font-size:19px}
+  .lp-hero .lp-sub{font-size:19px}
+  .lp-hero .lp-cta .btn{font-size:19px}
+  .lp-hero .lp-cta small{font-size:14px}
+}
