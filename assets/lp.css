@@ -385,3 +385,13 @@
 .mon-scr .win{border-radius:12px;box-shadow:0 0 0 6px rgba(255,255,255,.12)}
 .mon-neck,.mon-base{display:none}
 @media (max-width:560px){.mon-body{padding:0}.mon-scr{padding:0}}
+/* 11/4 画面が半分以上を占めないよう縮小 */
+.lp-hero .wrap{grid-template-columns:1.1fr .9fr;gap:48px}
+.mon .win-side{display:none}
+.mon .d2-big b{font-size:32px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr}}
+.mon .win-body{grid-template-columns:1fr}
+.mon .d2-next p,.mon .d2-next b,.mon .d2-next strong{white-space:nowrap}
+.mon .d2-next{font-size:14px}
+.mon .d2-body{grid-template-columns:1.35fr 1fr}
+@media (max-width:880px){.mon .d2-body{grid-template-columns:1fr}.mon .d2-next p{white-space:normal}}
