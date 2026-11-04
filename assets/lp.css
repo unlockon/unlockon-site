@@ -431,3 +431,20 @@
   .lp-hero .wrap>div:first-child{justify-self:start}
 }
 @media (min-width:1100px){.lp-hero .wrap{padding-left:clamp(24px,5vw,80px);padding-right:clamp(24px,5vw,80px)}}
+/* 11/4 左メニューを戻し、上のブラウザバーを外す */
+.mon .win-bar{display:none}
+.mon .win-side{display:block}
+.mon .win-body{grid-template-columns:132px 1fr}
+@media (max-width:560px){.mon .win-side{display:none}.mon .win-body{grid-template-columns:1fr}}
+/* 11/4 メニュー付きでは中身を1列に（着地→4つの数字→次に決めること） */
+.mon .d2-body{display:flex;flex-direction:column;align-items:stretch}
+.mon .d2-l{display:contents}
+.mon .d2-r{order:1;margin-bottom:16px}
+.mon .d2-next{order:2}
+.mon .d2-r .d2-kpi{height:auto;grid-template-columns:repeat(4,1fr);grid-template-rows:auto}
+.mon .d2-r .d2-kpi div{padding:12px 14px}
+.mon .d2-r .d2-kpi div:nth-child(n){border-top:0;border-left:1px solid var(--line)}
+.mon .d2-r .d2-kpi div:first-child{border-left:0}
+.mon .d2-l .d2-scale{margin-bottom:18px}
+@media (max-width:560px){.mon .d2-r .d2-kpi{grid-template-columns:1fr 1fr}.mon .d2-r .d2-kpi div:nth-child(3){border-left:0}.mon .d2-r .d2-kpi div:nth-child(n+3){border-top:1px solid var(--line)}}
+.mon .d2-body{gap:0}
