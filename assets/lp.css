@@ -405,3 +405,12 @@
 .lp-hero .wrap{grid-template-columns:1fr 1.1fr;gap:56px}
 .mon .d2-big b{font-size:38px}
 @media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}.mon .d2-big b{font-size:34px}}
+/* 11/4 画面を上下に大きく、左は列の中央に */
+.mon .d2-hd{padding:18px 22px}
+.mon .d2-body{padding:26px 22px 28px;align-items:stretch}
+.mon .d2-l .d2-scale{margin-bottom:22px}
+.mon .d2-r .d2-kpi{height:100%;grid-template-rows:1fr 1fr}
+.mon .d2-r .d2-kpi div{padding:14px 14px;display:flex;flex-direction:column;justify-content:center}
+.mon .d2-next{padding:16px 16px}
+.lp-hero .wrap>div:first-child{justify-self:center}
+@media (max-width:880px){.lp-hero .wrap>div:first-child{justify-self:stretch}.mon .d2-r .d2-kpi{height:auto}}
