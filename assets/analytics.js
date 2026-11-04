@@ -1,7 +1,7 @@
 /* GA4：PV計測＋フォームへのボタンクリック計測（HP・LP共通）
    測定IDは GA_ID を差し替える。未設定（G-XXXX）のあいだは何も送らない。 */
 (function(){
-  var GA_ID = 'G-XXXXXXXXXX';
+  var GA_ID = 'G-1VFH9G3JYW';
   if (GA_ID.indexOf('XXXX') > -1) return;
   var s = document.createElement('script');
   s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
