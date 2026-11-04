@@ -268,7 +268,7 @@
 .nay{padding-top:64px!important}
 @media (max-width:600px){.ctas .in,.cardsec .in{padding:0 18px}.ctas .ct1{font-size:18px}}
 
-.notx{font-size:15px;font-weight:700;color:#5A6680;line-height:1.8;margin:0 0 18px}.notx b{color:var(--navy);font-weight:900}
+.notx{font-size:16px;font-weight:700;color:#5A6680;line-height:1.8;margin:22px 0 0;padding-left:14px;border-left:3px solid var(--orange)}.notx b{color:var(--navy);font-weight:900}
 @media (max-width:600px){.notx{font-size:13px}}
 
 .i11 .dw{font-size:13px;font-weight:900;font-family:var(--jp,inherit);letter-spacing:0}
