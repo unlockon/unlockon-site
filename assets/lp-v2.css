@@ -257,7 +257,6 @@
 
 .sec .lt4{background:#fff!important;color:var(--navy)}
 .sec .lt4 .h1{font-size:34px!important;white-space:nowrap}.sec .lt4 .h1 .num{font-size:76px!important}
-@media (max-width:600px){.sec .lt4 .h1{font-size:26px!important}.sec .lt4 .h1 .num{font-size:58px!important}.lt4 .g{grid-template-columns:1fr!important}}
 .lt4 .g{grid-template-columns:.72fr 1.28fr!important;gap:36px!important}
 .lt4 .sub{opacity:1;color:#3A4A66}
 .lt4 .t{background:#F6F7F9!important;border:1px solid #E6E9EF!important;color:var(--navy)!important;font-size:12.5px!important}
@@ -300,7 +299,7 @@
 .sbar{display:none}
 @media (max-width:600px){
 .sec .fv .h1{font-size:28px!important}.sec .i04 .h1 .num{font-size:62px!important}
-.i04 .t:nth-child(n+16){display:flex!important}.i04 .mos{grid-template-columns:repeat(2,1fr)!important}.i04 .t{min-height:44px!important;font-size:12px!important}
+.i04 .t:nth-child(n+16){display:block!important}.i04 .mos{grid-template-columns:repeat(2,1fr)!important}.i04 .t{min-height:44px!important;font-size:12px!important}
 .z{padding:56px 0}.zi{padding:0 18px}.zh h2{font-size:22px}.zh{margin-bottom:26px}
 .cmpT .r{grid-template-columns:76px 1fr 1fr}.cmpT .r>div{padding:12px 10px;font-size:12.5px}.cmpT .k{font-size:12px!important}.cmpT .h>div{font-size:12px}
 .fd,.stp{grid-template-columns:1fr}.fq{font-size:18px}.sc b{font-size:18px}
@@ -308,7 +307,7 @@
 .ft{padding-bottom:90px}
 .sbar{display:block;position:fixed;left:0;right:0;bottom:0;padding:10px 14px 14px;background:rgba(255,255,255,.96);box-shadow:0 -6px 20px rgba(0,0,0,.08);z-index:50}
 .sbar a{display:block;text-align:center;background:var(--orange);color:#fff;font-weight:900;border-radius:999px;padding:14px;font-size:15px;text-decoration:none}}
-
+@media (max-width:600px){.sec .lt4 .h1{font-size:26px!important}.sec .lt4 .h1 .num{font-size:58px!important}.lt4 .g{grid-template-columns:1fr!important;gap:24px!important}.lt4 .t{font-size:12px!important}}
 
 /* sticky header */
 .hdr{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(30,53,96,.08);color:var(--navy)}
