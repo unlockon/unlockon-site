@@ -364,3 +364,4 @@
 .d2-kpi b{font-size:18px}
 .win .d2-kpi b{font-size:17px}
 .days b{font-family:var(--serif)}
+.d2-big b,.d2-kpi b{font-weight:500;color:#1E2A3B}
