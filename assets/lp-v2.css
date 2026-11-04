@@ -175,7 +175,7 @@
 .v1 .dkh{display:inline-flex!important;align-items:baseline}
 .v1 .more{font-size:13px;color:var(--sub);margin:10px 0 0}
 .v1 .cmp2{margin:14px 0 0;padding:4px 0 0}
-.v1 .was{margin:0;font-size:14px;font-weight:700;color:#8A93A0}
+.v1 .was{margin:0;font-size:16px;font-weight:700;color:#6B7686}.v1 .was b{font-size:20px;color:#4A5568;margin:0 2px}
 .v1 .now{margin:4px 0 0;display:flex;align-items:flex-end;gap:10px;white-space:nowrap}
 .v1 .now .nl{font-size:17px;font-weight:900;padding-bottom:14px}
 .v1 .now b{font-family:var(--en);font-weight:900;font-size:132px;line-height:.8;color:var(--orange);letter-spacing:-.04em}
