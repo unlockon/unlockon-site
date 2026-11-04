@@ -425,3 +425,9 @@
   .lp-hero .lp-cta .btn{font-size:19px}
   .lp-hero .lp-cta small{font-size:14px}
 }
+/* 11/4 左右の外側余白を均等に（中身の幅で中央寄せ） */
+@media (min-width:1100px){
+  .lp-hero .wrap{max-width:none;grid-template-columns:max-content minmax(0,680px);justify-content:center;gap:64px}
+  .lp-hero .wrap>div:first-child{justify-self:start}
+}
+@media (min-width:1100px){.lp-hero .wrap{padding-left:clamp(24px,5vw,80px);padding-right:clamp(24px,5vw,80px)}}
