@@ -145,7 +145,7 @@
 
 .v1 .g2{display:grid;grid-template-columns:1fr 1.08fr;gap:44px;align-items:center;text-align:left}
 .v1 .q2{margin-bottom:16px!important;font-size:17px!important;padding:5px 18px}
-.v1 .h1{font-size:clamp(26px,3.5vw,46px);white-space:nowrap;text-align:left;margin-bottom:6px}
+.v1 .h1 .o{margin-right:-.06em}.v1 .h1{font-size:clamp(26px,3.5vw,46px);white-space:nowrap;text-align:left;margin-bottom:6px}
 .v1 .ai1{font-size:16px;font-weight:700;margin:18px 0 0}
 .v1 .five{display:flex;align-items:flex-end;gap:8px;margin:0}
 .v1 .five b{font-family:var(--en);font-weight:900;font-size:190px;line-height:.82;color:var(--orange);letter-spacing:-.04em}
