@@ -400,3 +400,8 @@
 .lp-hero .lp-h1{font-size:clamp(34px,5vw,64px)}
 @media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}}
 .lp .hd .wrap{max-width:1120px}
+/* 11/4 右の画面を少し大きく（中央寄せは維持） */
+.lp-hero .wrap,.lp .hd .wrap{max-width:1240px}
+.lp-hero .wrap{grid-template-columns:1fr 1.1fr;gap:56px}
+.mon .d2-big b{font-size:38px}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}.mon .d2-big b{font-size:34px}}
