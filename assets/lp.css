@@ -395,3 +395,8 @@
 .mon .d2-next{font-size:14px}
 .mon .d2-body{grid-template-columns:1.35fr 1fr}
 @media (max-width:880px){.mon .d2-body{grid-template-columns:1fr}.mon .d2-next p{white-space:normal}}
+/* 11/4 左右を中央に寄せ、見出しを大きく */
+.lp-hero .wrap{max-width:1120px;grid-template-columns:1fr 1fr;gap:56px}
+.lp-hero .lp-h1{font-size:clamp(34px,5vw,64px)}
+@media (max-width:880px){.lp-hero .wrap{grid-template-columns:1fr;gap:40px}}
+.lp .hd .wrap{max-width:1120px}
