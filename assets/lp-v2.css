@@ -376,6 +376,19 @@ u.ai,.ai{text-decoration:none!important}
 .i09 .inside span{padding:3px 6px!important;white-space:nowrap}
 }
 @media (max-width:600px){.c25{box-sizing:border-box;max-width:100%;padding:9px 12px!important;gap:4px!important;font-size:12px!important;letter-spacing:-.03em}.c25 b{font-size:16px!important}.c25 span,.c25 em{font-size:10.5px!important}}
+@media (max-width:600px){
+#services{padding-top:30px!important}
+.lt4 .en{margin-bottom:2px!important}
+.sec .lt4 .h1,.lt4 .h1{font-size:22px!important;margin-bottom:6px!important;line-height:1.3!important}
+.sec .lt4 .h1 .num,.lt4 .h1 .num{font-size:46px!important}
+.lt4 .sub{font-size:12.5px!important;line-height:1.6!important;margin:0!important}
+.lt4 .g{gap:12px!important}
+.i04 .mos{gap:4px!important}
+.i04 .t{padding:5px 6px 6px!important}
+.i04 .t .tnm{margin-top:1px!important}
+.i04 .t i{font-size:8.5px!important}
+.lt4 .mcap{margin-top:6px!important}
+}
 /* sticky header */
 .hdr{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(30,53,96,.08);color:var(--navy)}
 .hdr .top{max-width:1180px;margin:0 auto;padding:0 40px;width:100%}
