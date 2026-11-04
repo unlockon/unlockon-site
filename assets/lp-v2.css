@@ -335,7 +335,7 @@
 @media (max-width:600px){.dep .aiw{font-size:12px}}
 #what .body{padding-bottom:0!important}#what{padding-bottom:56px!important}#services{padding-top:56px!important}#services .body{padding-top:0!important}
 @media (max-width:600px){#what{padding-bottom:36px!important}#services{padding-top:36px!important}}
-.cmpT .k{background:#fff!important;color:var(--navy);border-right:1px solid var(--line);white-space:nowrap}
+.cmpT .k{background:#E8EEF7!important;color:var(--navy);border-right:1px solid #D5DEEC;white-space:nowrap;justify-content:center;text-align:center}
 .cmpT .a{background:#fff}
 @media (max-width:600px){.cmpT .r{grid-template-columns:94px 1fr 1fr!important}.cmpT .k{padding:12px 8px!important;font-size:12px!important;letter-spacing:-.02em}.cmpT .h>div{white-space:nowrap;font-size:11.5px!important;padding:12px 4px!important;letter-spacing:-.02em}}
 /* sticky header */
