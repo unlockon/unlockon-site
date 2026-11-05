@@ -22,7 +22,7 @@
     if (!a) return;
     var form = 'その他';
     for (var k in FORMS) if (a.href.indexOf(k) > -1) { form = FORMS[k]; break; }
-    var sec = a.closest('section,header,footer,.sticky');
+    var sec = a.closest('section,header,footer,.sticky,.sbar');
     gtag('event', 'form_click', {
       form_name: form,
       button_text: (a.textContent || '').trim().slice(0, 40),
