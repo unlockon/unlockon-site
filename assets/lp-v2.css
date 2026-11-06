@@ -467,3 +467,16 @@ u.ai,.ai{text-decoration:none!important}
 .ft a{color:inherit}
 html{scroll-padding-top:80px}
 @media (max-width:600px){.hdr .top{padding:0 18px}html{scroll-padding-top:64px}}
+/* 監査対応 11/6：25種類のプラン印 */
+.mos .t{position:relative}
+.pl{display:inline-block;font-style:normal;font-family:var(--en,Montserrat),sans-serif;font-size:9px;font-weight:700;letter-spacing:.04em;line-height:1;padding:3px 5px;border-radius:3px;vertical-align:middle}
+.mos .t .pl{position:absolute;top:6px;right:6px}
+.pl-S{background:#E7EEF8;color:#2563A8}
+.pl-A{background:#1E3560;color:#fff}
+.pl-I{background:#F6EEDC;color:#8A6416}
+.pl-O{background:#EDEDED;color:#555}
+.mleg{font-size:12px;color:var(--sub,#6B7280);margin-top:8px;line-height:2}
+.mleg .pl{margin:0 4px 0 10px}
+.mleg .pl:first-child{margin-left:0}
+.mleg .nw .pl{margin-left:0}
+.mleg>.nw{margin-right:12px}
