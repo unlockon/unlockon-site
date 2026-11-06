@@ -267,3 +267,5 @@ ul,ol{list-style:none}
 .nw{display:inline-block}
 /* v11 ブランド確定（11/1）：WEB集客支援のサービス色をゴールドに */
 .svc-o{--c:#B8862B;--tint:#F6EEDC}
+/* v12 フッターに社名・住所 */
+.ft-addr{font-size:12px;line-height:1.7;color:rgba(255,255,255,.7)}
