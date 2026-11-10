@@ -485,4 +485,5 @@ html{scroll-padding-top:80px}
 .kj .in{max-width:1180px;margin:0 auto;padding:0 40px}
 .kj .kj1{font-size:34px;font-weight:700;color:var(--navy);margin:0 0 12px;letter-spacing:.04em;line-height:1.4}
 .kj .kj2{font-size:18px;font-weight:700;color:var(--navy);margin:0;line-height:1.7}
-@media (max-width:600px){.kj{padding:40px 0 8px}.kj .in{padding:0 18px}.kj .kj1{font-size:26px}.kj .kj2{font-size:15px}}
+.kj .kj3{font-size:15px;font-weight:500;color:var(--sub);margin:8px 0 0;line-height:1.7}
+@media (max-width:600px){.kj{padding:40px 0 8px}.kj .in{padding:0 18px}.kj .kj1{font-size:26px}.kj .kj2{font-size:15px}.kj .kj3{font-size:13px}}
